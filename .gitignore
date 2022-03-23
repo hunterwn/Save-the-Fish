@@ -36,3 +36,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+.vscode/settings.json
+UserSettings/AndroidLogcatSettings.asset
+UserSettings/AndroidLogcatSettings.asset
