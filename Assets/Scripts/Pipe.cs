@@ -12,7 +12,7 @@ public class Pipe : MonoBehaviour
         {
             Rigidbody2D rb = other.gameObject.GetComponent<Rigidbody2D>();
             if(rb.velocity.magnitude < 2.0f) {
-                other.gameObject.GetComponent<Rigidbody2D>().velocity *= 1.1f;
+                other.gameObject.GetComponent<Rigidbody2D>().velocity *= 1.5f;
             }
         }
     }
