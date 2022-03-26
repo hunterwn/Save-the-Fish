@@ -9,7 +9,14 @@ public class ParticleGenerator : MonoBehaviour
     public float spawnDelay = 0.01f;
     public Vector3 initialVelocity = Vector3.zero;
 
-    void Start()
+    // void Start()
+    // {
+    //     IEnumerator coroutine = WaitAndSpawnParticle(spawnDelay);
+    //     StartCoroutine(coroutine);
+    // }
+
+
+    public void BeginGenerating()
     {
         IEnumerator coroutine = WaitAndSpawnParticle(spawnDelay);
         StartCoroutine(coroutine);
