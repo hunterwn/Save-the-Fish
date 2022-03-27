@@ -21,23 +21,30 @@ public class behavior_Draggable : MonoBehaviour
     private void OnMouseDown()
     {
         isDragged = true;
-        mouseDragStartPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousePosFromCamera = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseDragStartPosition = new Vector3(mousePosFromCamera.x, mousePosFromCamera.y, 0);
         spriteDragStartPosition = transform.localPosition;
+
+        //disable camera Pan/Zoom on touch or click
+        Camera.main.GetComponent<Dossamer.PanZoom.PanZoomBehavior>().disableAllAxes();
     }
 
     private void OnMouseDrag()
     {
         if (isDragged)
         {
-            transform.localPosition = spriteDragStartPosition + Camera.main.ScreenToWorldPoint(Input.mousePosition) -
+            Vector3 mousePosFromCamera = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.localPosition = spriteDragStartPosition + new Vector3(mousePosFromCamera.x, mousePosFromCamera.y, 0) -
                                       mouseDragStartPosition;
-
         }
     }
 
     private void OnMouseUp()
     {
         isDragged = false;
-        dragEndedCallback(this);
+        //dragEndedCallback(this);
+
+        //enable camera Pan/Zoom on release
+        Camera.main.GetComponent<Dossamer.PanZoom.PanZoomBehavior>().enableAllAxes();
     }
 }

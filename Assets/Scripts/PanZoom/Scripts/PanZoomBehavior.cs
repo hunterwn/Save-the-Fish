@@ -728,6 +728,20 @@ namespace Dossamer.PanZoom
             axes[axis] = axisData; 
         }
 
+        public void disableAllAxes()
+        {
+            SetIsAxisEnabled(Axis.RIGHT, false);
+            SetIsAxisEnabled(Axis.UP, false);
+            SetIsAxisEnabled(Axis.FORWARD, false);
+        }
+
+        public void enableAllAxes()
+        {
+            SetIsAxisEnabled(Axis.RIGHT, true);
+            SetIsAxisEnabled(Axis.UP, true);
+            SetIsAxisEnabled(Axis.FORWARD, true);
+        }
+
         void ClampPerspectiveClose()
         {
             float dotProduct = GetForwardDotToFocusTarget();
