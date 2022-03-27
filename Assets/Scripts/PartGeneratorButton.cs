@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -31,7 +32,8 @@ public class PartGeneratorButton : Button
         {
             yield return new WaitForSeconds(0.01f);
             Vector3 mousePosFromCamera = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            part.localPosition = new Vector3(mousePosFromCamera.x, mousePosFromCamera.y, 0);
+            Vector3 newPosition = new Vector3(mousePosFromCamera.x, mousePosFromCamera.y, 0);
+            part.localPosition = RoundVec3toNearestHalf(newPosition);
         }
     }
 
@@ -41,5 +43,13 @@ public class PartGeneratorButton : Button
         mouseHeld = false;
         //enable camera Pan/Zoom on release
         Camera.main.GetComponent<Dossamer.PanZoom.PanZoomBehavior>().enableAllAxes();
+    }
+
+    private Vector3 RoundVec3toNearestHalf(Vector3 vec) {
+        for (int i = 0; i < 3; i++)
+        {
+            vec[i] = (float)Math.Round(vec[i] * 2, MidpointRounding.AwayFromZero) / 2;
+        }
+        return vec;
     }
 }

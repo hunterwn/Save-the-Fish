@@ -34,17 +34,25 @@ public class behavior_Draggable : MonoBehaviour
         if (isDragged)
         {
             Vector3 mousePosFromCamera = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.localPosition = spriteDragStartPosition + new Vector3(mousePosFromCamera.x, mousePosFromCamera.y, 0) -
+            Vector3 newPosition = spriteDragStartPosition + new Vector3(mousePosFromCamera.x, mousePosFromCamera.y, 0) -
                                       mouseDragStartPosition;
+            transform.localPosition = RoundVec3toNearestHalf(newPosition);
         }
     }
 
     private void OnMouseUp()
     {
         isDragged = false;
-        //dragEndedCallback(this);
 
         //enable camera Pan/Zoom on release
         Camera.main.GetComponent<Dossamer.PanZoom.PanZoomBehavior>().enableAllAxes();
+    }
+
+    private Vector3 RoundVec3toNearestHalf(Vector3 vec) {
+        for (int i = 0; i < 3; i++)
+        {
+            vec[i] = (float)Math.Round(vec[i] * 2, MidpointRounding.AwayFromZero) / 2;
+        }
+        return vec;
     }
 }
