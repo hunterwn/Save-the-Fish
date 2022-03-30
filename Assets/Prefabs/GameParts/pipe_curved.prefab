@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2383115802806092806}
   - component: {fileID: 1604445824}
   - component: {fileID: 3227620644666216362}
+  - component: {fileID: 7240950449623202514}
   m_Layer: 0
   m_Name: pipe_curved
   m_TagString: Untagged
@@ -196,3 +197,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5960a59965d4d09428a1e09b6a1c9ef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &7240950449623202514
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901718113993754151}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
