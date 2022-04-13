@@ -55,9 +55,10 @@ public class behavior_Draggable : MonoBehaviour
             DrawBox(gridPoints[i], 0.2f, Color.green);
         }
     }
-
     public void OnMouseDown()
     {
+        ActiveObject activeObject = gameObject.GetComponent<ActiveObject>();
+        activeObject.SetInactive();
         isDragged = true;
         CalculateGridPoints();
         Vector3 mousePosFromCamera = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -89,6 +90,8 @@ public class behavior_Draggable : MonoBehaviour
 
     public void OnMouseUp()
     {
+        ActiveObject activeObject = gameObject.GetComponent<ActiveObject>();
+        activeObject.SetActive();
         isDragged = false;
 
         //enable camera Pan/Zoom on release
