@@ -17,6 +17,8 @@ public class behavior_Draggable : MonoBehaviour
     private BoxCollider2D boxCollider;
     private List<Vector2> gridPoints;
 
+    private Collider2D grabBox;
+
     private void CalculateGridPoints() {
         List<Vector2> newPoints = new List<Vector2>();
         Collider2D coll = gameObject.GetComponent<Collider2D>();
@@ -60,7 +62,7 @@ public class behavior_Draggable : MonoBehaviour
         ActiveObject activeObject = gameObject.GetComponent<ActiveObject>();
         activeObject.SetInactive();
         isDragged = true;
-        CalculateGridPoints();
+        // CalculateGridPoints();
         Vector3 mousePosFromCamera = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseDragStartPosition = new Vector3(mousePosFromCamera.x, mousePosFromCamera.y, 0);
         spriteDragStartPosition = transform.localPosition;
@@ -119,5 +121,12 @@ public class behavior_Draggable : MonoBehaviour
         Debug.DrawLine(corners[1], corners[2], color, Mathf.Infinity);
         Debug.DrawLine(corners[2], corners[3], color, Mathf.Infinity);
         Debug.DrawLine(corners[3], corners[0], color, Mathf.Infinity);
+    }
+
+    private void Start() {
+        grabBox = gameObject.GetComponent<GrabBox>().grabCollider;
+        grabBox.enabled = false;
+        CalculateGridPoints();
+        grabBox.enabled = true;
     }
 }

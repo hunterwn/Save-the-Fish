@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1604445824}
   - component: {fileID: 3227620644666216362}
   - component: {fileID: 7240950449623202514}
+  - component: {fileID: 8946195783752765421}
   m_Layer: 0
   m_Name: pipe_curved
   m_TagString: Untagged
@@ -159,6 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e66c9c5867ff294bb53df78b11d65c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridManager: {fileID: 0}
 --- !u!61 &1604445824
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -218,3 +220,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &8946195783752765421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901718113993754151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a51fd785912667469dfb55c5dd20cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabCollider: {fileID: 1604445824}

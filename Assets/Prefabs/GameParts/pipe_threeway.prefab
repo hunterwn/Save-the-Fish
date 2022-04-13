@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2818743419421928113}
   - component: {fileID: 1833310380284362806}
   - component: {fileID: 9167199745234878655}
+  - component: {fileID: 972670173545530746}
   m_Layer: 0
   m_Name: pipe_threeway
   m_TagString: Untagged
@@ -191,3 +192,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e66c9c5867ff294bb53df78b11d65c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridManager: {fileID: 0}
+--- !u!114 &972670173545530746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6902594578244710180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a51fd785912667469dfb55c5dd20cec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabCollider: {fileID: 2818743419421928113}
