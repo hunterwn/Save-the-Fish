@@ -18,11 +18,11 @@ public class PartGeneratorButton : Button
         base.OnPointerDown(eventData);
         mouseHeld = true;
         //Generate the new part
-        Transform newPart = Instantiate(partToGenerate, gridManager.transform);
+        Vector3 mousePosFromCamera = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 instancePosition = new Vector3(mousePosFromCamera.x, mousePosFromCamera.y, 10);
+        Transform newPart = Instantiate(partToGenerate, instancePosition, Quaternion.identity);
         dragBehavior = newPart.gameObject.GetComponent<behavior_Draggable>();
         dragBehavior.gridManager = gridManager;
-        Vector3 mousePosFromCamera = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        newPart.localPosition = new Vector3(mousePosFromCamera.x, mousePosFromCamera.y, 10);
         dragBehavior.OnMouseDown();
         IEnumerator coroutine = DragPart(newPart);
         StartCoroutine(coroutine);
@@ -30,6 +30,7 @@ public class PartGeneratorButton : Button
 
     private IEnumerator DragPart(Transform part)
     {
+        dragBehavior.OnMouseDown();
         while (mouseHeld)
         {
             yield return new WaitForSeconds(0.05f);
