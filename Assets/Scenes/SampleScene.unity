@@ -542,7 +542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6156832824095681720, guid: 06283b0c4b0da9c4185eb774979e37f0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -214
+      value: -184
       objectReference: {fileID: 0}
     - target: {fileID: 6156832824095681720, guid: 06283b0c4b0da9c4185eb774979e37f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -791,11 +791,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8140685869595877054, guid: f5bcb006946397242bb4bee769e93d78, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.87
       objectReference: {fileID: 0}
     - target: {fileID: 8140685869595877054, guid: f5bcb006946397242bb4bee769e93d78, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.5
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 8140685869595877054, guid: f5bcb006946397242bb4bee769e93d78, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1202,11 +1202,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3410684528701008016, guid: d353c2a61b98f904d9e517b741970541, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: -3.31
       objectReference: {fileID: 0}
     - target: {fileID: 3410684528701008016, guid: d353c2a61b98f904d9e517b741970541, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3410684528701008016, guid: d353c2a61b98f904d9e517b741970541, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1427,11 +1427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6805152714576223556, guid: 6d767381c24f8d14288a7bbe1e8e8c23, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 6805152714576223556, guid: 6d767381c24f8d14288a7bbe1e8e8c23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -2.92
       objectReference: {fileID: 0}
     - target: {fileID: 6805152714576223556, guid: 6d767381c24f8d14288a7bbe1e8e8c23, type: 3}
       propertyPath: m_LocalPosition.z

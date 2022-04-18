@@ -10,7 +10,7 @@ public class FishBowl : MonoBehaviour
     public GameObject meter;
     private int waterCount = 0;
 
-    private Vector3 change = new Vector3( 0, 0.001f, 0); 
+    private Vector3 change = new Vector3( 0, 0.003f, 0); 
     
 
     private void OnTriggerEnter2D(Collider2D collider) {
