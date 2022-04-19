@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ParticleManager : MonoBehaviour
 {
-    public int particleLimit = 50;
+    public int particleLimit = 500;
     [HideInInspector]
     public int particleCount = 0;
 }

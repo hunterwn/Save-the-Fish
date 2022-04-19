@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ControlButtons : MonoBehaviour
+public class FailureControl : MonoBehaviour
 {
     public string menu;
 
@@ -22,5 +22,15 @@ public class ControlButtons : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(menu);
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(GlobalVariables.currentLevel);
+    }
+
+    public void PreviousLevel()
+    {
+        SceneManager.LoadScene(GlobalVariables.previousLevel);
     }
 }
