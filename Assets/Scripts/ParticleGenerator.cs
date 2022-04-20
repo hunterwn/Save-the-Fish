@@ -31,10 +31,6 @@ public class ParticleGenerator : MonoBehaviour
             if(particleManager.particleCount < particleManager.particleLimit) {
                 GenerateParticle();
             }
-
-            //Fail screen because out of water
-            else if(particleManager.particleCount >= particleManager.particleLimit) SceneManager.LoadScene("Failscreen");
-
         }
     }
 

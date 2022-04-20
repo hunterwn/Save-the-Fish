@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level1Control : MonoBehaviour
+public class LevelControl : MonoBehaviour
 {
     public string menu;
     
@@ -11,8 +11,8 @@ public class Level1Control : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GlobalVariables.currentLevel = "Level1";
-        GlobalVariables.previousLevel = "Title";
+        // GlobalVariables.currentLevel = "Level1";
+        // GlobalVariables.previousLevel = "Title";
     }
 
     // Update is called once per frame
@@ -24,6 +24,12 @@ public class Level1Control : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(menu);
+    }
+
+    public void Retry()
+    {
+        Scene scene = SceneManager.GetActiveScene(); 
+        SceneManager.LoadScene(scene.name);
     }
 }
 
