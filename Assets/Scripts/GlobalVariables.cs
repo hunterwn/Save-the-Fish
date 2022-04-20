@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour
 {
-    public static string currentLevel;
-    public static string previousLevel;
+    public static int previousSceneIndex;
 
     // Start is called before the first frame update
     void Start()
     {
-        currentLevel = "Title";
-        previousLevel = "Title";
+        previousSceneIndex = 0;
     }
 
     // Update is called once per frame

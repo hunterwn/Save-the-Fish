@@ -26,11 +26,11 @@ public class FailureControl : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene(GlobalVariables.currentLevel);
+        //SceneManager.LoadScene(GlobalVariables.currentLevel);
     }
 
     public void PreviousLevel()
     {
-        SceneManager.LoadScene(GlobalVariables.previousLevel);
+        //SceneManager.LoadScene(GlobalVariables.previousLevel);
     }
 }

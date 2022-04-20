@@ -9,12 +9,13 @@ public class MainMenu : MonoBehaviour
     public string level1;
     public string level2;
     public string level3;
+    public static int previousSceneIndex;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

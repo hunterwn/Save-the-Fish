@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelControl : MonoBehaviour
+public class WinControl : MonoBehaviour
 {
     public string menu;
-    
 
     // Start is called before the first frame update
     void Start()
     {
-        //Update current scene
-        GlobalVariables.previousSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        
     }
 
     // Update is called once per frame
@@ -26,10 +24,8 @@ public class LevelControl : MonoBehaviour
         SceneManager.LoadScene(menu);
     }
 
-    public void Retry()
+    public void NextLevel()
     {
-        Scene scene = SceneManager.GetActiveScene(); 
-        SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene(GlobalVariables.previousSceneIndex + 1);
     }
 }
-

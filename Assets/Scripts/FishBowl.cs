@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 
@@ -10,7 +11,7 @@ public class FishBowl : MonoBehaviour
     public GameObject meter;
     private int waterCount = 0;
 
-    private Vector3 change = new Vector3( 0, 0.003f, 0); 
+    private Vector3 change = new Vector3( 0, 0.004f, 0); 
     
 
     private void OnTriggerEnter2D(Collider2D collider) {
@@ -19,6 +20,9 @@ public class FishBowl : MonoBehaviour
             waterCount += 1;
             meter.transform.localScale += change;
             meter.transform.position += change;
+
+            //Check if filled bowl
+            if(waterCount >= 240) SceneManager.LoadScene("Winscreen");
         }
     }
 
