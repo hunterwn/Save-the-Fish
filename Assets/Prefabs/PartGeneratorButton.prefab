@@ -166,7 +166,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
-  generatedPartsContainer: {fileID: 0}
+  gridManager: {fileID: 0}
   partToGenerate: {fileID: 8893972817644265450, guid: 4f937ede851d1f845aa2c98dddbdc12a, type: 3}
 --- !u!114 &1322357481
 MonoBehaviour:
@@ -180,5 +180,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b0b71a6d426fca45b4e9b36668ccc3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedPartsContainer: {fileID: 0}
+  gridManager: {fileID: 0}
   partToGenerate: {fileID: 8893972817644265450, guid: 4f937ede851d1f845aa2c98dddbdc12a, type: 3}

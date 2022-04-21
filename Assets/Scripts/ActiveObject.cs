@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActiveObject : MonoBehaviour
 {
-    private bool active = false;
+    public bool active = false;
 
     public void SetInactive() {
         this.active = true;
