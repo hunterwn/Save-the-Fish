@@ -10,12 +10,18 @@ public class ParticleGenerator : MonoBehaviour
     public float spawnDelay = 0.01f;
     public Vector3 initialVelocity = Vector3.zero;
 
-    // void Start()
-    // {
-    //     IEnumerator coroutine = WaitAndSpawnParticle(spawnDelay);
-    //     StartCoroutine(coroutine);
-    // }
+     void Start()
+     {
+        //IEnumerator coroutine = WaitAndSpawnParticle(spawnDelay);
+        //StartCoroutine(coroutine);
+        GlobalVariables.points = 500000;
+    }
 
+    // Update is called once per frame
+    void Update()
+    {
+        if (GlobalVariables.points != 0) GlobalVariables.points -= 1;
+    }
 
     public void BeginGenerating()
     {
