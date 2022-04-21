@@ -4,23 +4,19 @@ using UnityEngine;
 
 public class RollerBall : ActiveObject
 {
- 
+    private bool activated = false;
     // Start is called before the first frame update
     void Start()
     {
-        this.GetComponent<Rigidbody2D>().simulated = false;
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (active)
-        {
-            this.GetComponent<Rigidbody2D>().simulated = true;
-        }
-        else
-        {
-            this.GetComponent<Rigidbody2D>().simulated = false;
+        if(active && !activated) {
+            activated = true;
+            this.gameObject.AddComponent<Rigidbody2D>();
         }
     }
 }

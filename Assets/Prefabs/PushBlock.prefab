@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a51fd785912667469dfb55c5dd20cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grabCollider: {fileID: 3292336738578354143, guid: 3b8a00bf763a11449b90921811d559ec, type: 3}
+  grabCollider: {fileID: 3193160278852788034}
 --- !u!50 &3193160278852788036
 Rigidbody2D:
   serializedVersion: 4
