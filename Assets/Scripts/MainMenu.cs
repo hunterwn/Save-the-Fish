@@ -44,8 +44,7 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        menuButton.Play();
         Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
     }
-
 }
