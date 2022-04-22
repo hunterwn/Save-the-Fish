@@ -20,13 +20,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Victory.unity
-    guid: e4f43d4058815664bb6b5950ef5efc79
   - enabled: 1
     path: Assets/Scenes/Winscreen.unity
     guid: 3925e88c36d4a144c97354aeb1ff4bd9
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: e4f43d4058815664bb6b5950ef5efc79
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

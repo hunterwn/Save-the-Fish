@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.267, y: 153.11}
+  m_AnchoredPosition: {x: 22.233, y: 304}
   m_SizeDelta: {x: 198.4644, y: 60.6089}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98930700
@@ -236,7 +236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38.79889, y: 84.53227}
+  m_AnchoredPosition: {x: 34.765, y: 205}
   m_SizeDelta: {x: 223.5283, y: 76.5373}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264218234
@@ -423,7 +423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761065464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30, y: -6, z: 0}
+  m_LocalPosition: {x: -113, y: -166, z: 0}
   m_LocalScale: {x: 34.838905, y: 34.838905, z: 46.223835}
   m_Children: []
   m_Father: {fileID: 1611304431}
@@ -658,8 +658,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -65, y: -22}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 22.2334, y: -199.5823}
+  m_SizeDelta: {x: 1.2143, y: 1.4363}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &911754564
 SpriteRenderer:
@@ -748,7 +748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.2452, y: -85}
+  m_AnchoredPosition: {x: -2.2452, y: -257}
   m_SizeDelta: {x: 141.44, y: 37.9867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1314817170
@@ -1398,7 +1398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.4909, y: -142.5966}
+  m_AnchoredPosition: {x: -2.2452, y: -199.58}
   m_SizeDelta: {x: 136.9487, y: 35.8521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2142693429
