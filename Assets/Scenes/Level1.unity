@@ -5844,7 +5844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8234414021004585850, guid: 79dc2abdc147b79469598f020d63a66f, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 7.7507563
+      value: 7.590756
       objectReference: {fileID: 0}
     - target: {fileID: 8468989608283719563, guid: 79dc2abdc147b79469598f020d63a66f, type: 3}
       propertyPath: m_LocalPosition.x

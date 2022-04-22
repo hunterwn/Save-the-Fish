@@ -8,6 +8,8 @@ public class trapDoorButton : MonoBehaviour
     private Rigidbody2D trapDoorRB;
     public Sprite pressedSprite;
     public SpriteRenderer spriteRenderer;
+    public AudioSource trapDoorSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +22,9 @@ public class trapDoorButton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(!other.gameObject.CompareTag("Particle")) {
-            spriteRenderer.sprite = pressedSprite; 
-            foreach(GameObject trapDoor in trapDoors) {
+            spriteRenderer.sprite = pressedSprite;
+            trapDoorSound.Play();
+            foreach (GameObject trapDoor in trapDoors) {
                 trapDoorRB = trapDoor.GetComponent<Rigidbody2D>();
                 trapDoorRB.freezeRotation = false;
                 trapDoorRB.constraints = 0;
