@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ParticleKillBox
   - Particle
+  - RollerBall
   layers:
   - Default
   - TransparentFX

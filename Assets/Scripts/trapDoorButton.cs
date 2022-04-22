@@ -4,23 +4,28 @@ using UnityEngine;
 
 public class trapDoorButton : MonoBehaviour
 {
-    public GameObject trapDoor;
+    public GameObject[] trapDoors;
     private Rigidbody2D trapDoorRB;
     public Sprite pressedSprite;
     public SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        trapDoorRB = trapDoor.GetComponent<Rigidbody2D>();
-        trapDoorRB.freezeRotation = true;
-        trapDoorRB.constraints = RigidbodyConstraints2D.FreezeAll;
+        foreach(GameObject trapDoor in trapDoors) {
+            trapDoorRB = trapDoor.GetComponent<Rigidbody2D>();
+            trapDoorRB.freezeRotation = true;
+            trapDoorRB.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(!other.gameObject.CompareTag("Particle")) {
             spriteRenderer.sprite = pressedSprite; 
-            trapDoorRB.freezeRotation = false;
-            trapDoorRB.constraints = 0;
+            foreach(GameObject trapDoor in trapDoors) {
+                trapDoorRB = trapDoor.GetComponent<Rigidbody2D>();
+                trapDoorRB.freezeRotation = false;
+                trapDoorRB.constraints = 0;
+            }
         }
     }
 }
