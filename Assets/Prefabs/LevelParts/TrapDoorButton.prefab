@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 8234414021004585848}
   - component: {fileID: 8234414021004585849}
   - component: {fileID: 8234414021004585850}
+  - component: {fileID: 4502560679700768946}
   m_Layer: 0
   m_Name: TrapDoor
   m_TagString: Untagged
@@ -161,6 +162,32 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!61 &4502560679700768946
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8234414021004585851}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4, y: 0.59}
+    newSize: {x: 2.4, y: 0.59}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.4, y: 0.59}
+  m_EdgeRadius: 0
 --- !u!1 &8468989608283719566
 GameObject:
   m_ObjectHideFlags: 0
