@@ -4512,7 +4512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343b83a318087be429b96cadeabbed10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partsLeft: 5
+  partsLeft: 9
   text: {fileID: 1445174145}
 --- !u!1001 &1243990016
 PrefabInstance:
