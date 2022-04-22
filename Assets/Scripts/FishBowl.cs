@@ -10,6 +10,7 @@ public class FishBowl : MonoBehaviour
     public int waterLayer = 6;
     public GameObject meter;
     private int waterCount = 0;
+    public AudioSource waterSound;
 
     private Vector3 change = new Vector3( 0, 0.004f, 0); 
     
@@ -21,6 +22,9 @@ public class FishBowl : MonoBehaviour
             waterCount += 1;
             meter.transform.localScale += change;
             meter.transform.position += change;
+
+            //Check if sound needs to be done
+            if(waterCount % 10 == 0) waterSound.Play();
 
             //Check if filled bowl
             if (waterCount >= 60)
