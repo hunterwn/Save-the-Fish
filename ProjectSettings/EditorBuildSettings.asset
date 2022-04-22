@@ -16,9 +16,12 @@ EditorBuildSettings:
     guid: 7541172654f3d5c4680bdff01a3df8e1
   - enabled: 1
     path: Assets/Scenes/Level3.unity
-    guid: a4a88efea1e49984e9d6c7ebca2bcd52
+    guid: d6d2e957d0611b54ca7a4b2cf1343771
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Failscreen.unity
+    path: Assets/Scenes/Victory.unity
     guid: e4f43d4058815664bb6b5950ef5efc79
   - enabled: 1
     path: Assets/Scenes/Winscreen.unity

@@ -23,7 +23,11 @@ public class FishBowl : MonoBehaviour
             meter.transform.position += change;
 
             //Check if filled bowl
-            if(waterCount >= 60) SceneManager.LoadScene("Winscreen");
+            if (waterCount >= 60)
+            {
+                if(GlobalVariables.previousSceneIndex != 3) SceneManager.LoadScene("Winscreen");
+                SceneManager.LoadScene("Victory");
+            }
         }
     }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FailureControl : MonoBehaviour
+public class CompleteVictory : MonoBehaviour
 {
     public string menu;
 
@@ -22,15 +22,5 @@ public class FailureControl : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(menu);
-    }
-
-    public void Retry()
-    {
-        //SceneManager.LoadScene(GlobalVariables.currentLevel);
-    }
-
-    public void PreviousLevel()
-    {
-        //SceneManager.LoadScene(GlobalVariables.previousLevel);
     }
 }
