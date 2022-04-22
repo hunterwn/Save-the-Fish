@@ -14,7 +14,7 @@ public class WinControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GlobalVariables.points -= (GlobalVariables.amountOfParts * 50000);
+        GlobalVariables.points -= (GlobalVariables.amountOfParts * 5000);
         points.text = "Score: " + GlobalVariables.points.ToString();
     }
 
