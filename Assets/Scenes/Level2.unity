@@ -7082,15 +7082,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2000047635386918006, guid: dc4cc5e9c7355a1459270782ebe93c2f, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.2537378
+      value: 0.6148616
       objectReference: {fileID: 0}
     - target: {fileID: 2000047635386918006, guid: dc4cc5e9c7355a1459270782ebe93c2f, type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.4745098
+      value: 0.41248363
       objectReference: {fileID: 0}
     - target: {fileID: 2000047635386918006, guid: dc4cc5e9c7355a1459270782ebe93c2f, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.19215688
+      value: 0.745283
       objectReference: {fileID: 0}
     - target: {fileID: 2000047635386918024, guid: dc4cc5e9c7355a1459270782ebe93c2f, type: 3}
       propertyPath: focusTarget
