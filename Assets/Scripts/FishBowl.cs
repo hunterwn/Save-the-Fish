@@ -30,7 +30,7 @@ public class FishBowl : MonoBehaviour
             if (waterCount >= 60)
             {
                 if(GlobalVariables.previousSceneIndex != 3) SceneManager.LoadScene("Winscreen");
-                SceneManager.LoadScene("Victory");
+                else SceneManager.LoadScene("Victory");
             }
         }
     }
