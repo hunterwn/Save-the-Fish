@@ -137,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridManager: {fileID: 609400269216206848}
   partToGenerate: {fileID: 6153179157944814159, guid: 3b8a00bf763a11449b90921811d559ec, type: 3}
+  partTracker: {fileID: 1208421906}
 --- !u!1 &183397609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2352,6 +2353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridManager: {fileID: 609400269216206848}
   partToGenerate: {fileID: 4682768947173028, guid: 660f39793a3017c48a282fa64f7f2627, type: 3}
+  partTracker: {fileID: 1208421906}
 --- !u!114 &776324052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2398,6 +2400,7 @@ MonoBehaviour:
       m_Calls: []
   gridManager: {fileID: 0}
   partToGenerate: {fileID: 8893972817644265450, guid: 4f937ede851d1f845aa2c98dddbdc12a, type: 3}
+  partTracker: {fileID: 0}
 --- !u!114 &776324053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3673,6 +3676,7 @@ GameObject:
   - component: {fileID: 1208421903}
   - component: {fileID: 1208421905}
   - component: {fileID: 1208421904}
+  - component: {fileID: 1208421906}
   m_Layer: 5
   m_Name: Parts
   m_TagString: Untagged
@@ -3695,6 +3699,7 @@ RectTransform:
   - {fileID: 6156832822794098347}
   - {fileID: 6156832824624115114}
   - {fileID: 776324050}
+  - {fileID: 1445174144}
   m_Father: {fileID: 1302680491}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3741,6 +3746,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1208421902}
   m_CullTransparentMesh: 1
+--- !u!114 &1208421906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208421902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343b83a318087be429b96cadeabbed10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partsLeft: 5
+  text: {fileID: 1445174145}
 --- !u!1 &1252287445
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,67 +4159,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1289795382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948403f50f00d2d468096a94baa6e432, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f6e418d4a3b97848a4580d0708600e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputMultipliers:
-    keys: 02000000030000000000000001000000040000000500000006000000
-    values:
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 1
-    - 2
-  mouseButton: 0
-  minViewPortSize: 5
-  maxViewPortSize: 20
-  referenceCamera: {fileID: 519420031}
-  precision: 1
-  axes:
-    keys: 000000000100000002000000
-    values:
-    - key: 0
-      orientation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-      IsOverriden: 0
-      IsEnabled: 1
-      IsSecondaryInputEnabled: 0
-      DoesSecondaryNeedTrigger: 0
-      secondaryInputTrigger: 
-      customInputMethod: 
-      customSecondaryInputMethod: 
-      inputMethod: 0
-      secondaryInputMethod: 7
-    - key: 1
-      orientation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-      IsOverriden: 0
-      IsEnabled: 1
-      IsSecondaryInputEnabled: 0
-      DoesSecondaryNeedTrigger: 0
-      secondaryInputTrigger: 
-      customInputMethod: 
-      customSecondaryInputMethod: 
-      inputMethod: 1
-      secondaryInputMethod: 7
-    - key: 2
-      orientation: {x: 0, y: 0, z: 0, w: 1}
-      IsOverriden: 0
-      IsEnabled: 1
-      IsSecondaryInputEnabled: 0
-      DoesSecondaryNeedTrigger: 0
-      secondaryInputTrigger: 
-      customInputMethod: 
-      customSecondaryInputMethod: 
-      inputMethod: 6
-      secondaryInputMethod: 4
-  focusTarget: {fileID: 0}
-  minForwardDistanceFromFocusTarget: 0.5
-  minFieldOfView: 5
-  maxFieldOfView: 60
-  triggerBoundaryObject: {fileID: 1559535140}
-  triggerBoundaryLayerName: 
-  isContributionProportionalToDistFromTarget: 1
 --- !u!1 &1302680487
 GameObject:
   m_ObjectHideFlags: 0
@@ -4583,6 +4544,7 @@ MonoBehaviour:
       m_Calls: []
   gridManager: {fileID: 0}
   partToGenerate: {fileID: 8893972817644265450, guid: 4f937ede851d1f845aa2c98dddbdc12a, type: 3}
+  partTracker: {fileID: 0}
 --- !u!1 &1340035412
 GameObject:
   m_ObjectHideFlags: 0
@@ -5430,6 +5392,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1445174143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445174144}
+  - component: {fileID: 1445174146}
+  - component: {fileID: 1445174145}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1445174144
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445174143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.425, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1208421903}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 169, y: 689.5}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1445174145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445174143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: '0
+
+'
+--- !u!222 &1445174146
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445174143}
+  m_CullTransparentMesh: 1
 --- !u!1 &1468630299
 GameObject:
   m_ObjectHideFlags: 0
@@ -6452,6 +6495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridManager: {fileID: 609400269216206848}
   partToGenerate: {fileID: 6902594578244710177, guid: 04213a14e548239459d9052fb9f2a60a, type: 3}
+  partTracker: {fileID: 1208421906}
 --- !u!1 &1904886140
 GameObject:
   m_ObjectHideFlags: 0
@@ -7200,8 +7244,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024968086}
   m_LocalRotation: {x: 0.7159018, y: 0.69820106, z: -0, w: 0}
-  m_LocalPosition: {x: -13.25, y: 5.86, z: 0}
-  m_LocalScale: {x: 0.4, y: -0.385004, z: 1}
+  m_LocalPosition: {x: -15.04, y: 5.9, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 609400269216206863}
   m_RootOrder: 41
@@ -9345,6 +9389,7 @@ MonoBehaviour:
       m_Calls: []
   gridManager: {fileID: 0}
   partToGenerate: {fileID: 8893972817644265450, guid: 4f937ede851d1f845aa2c98dddbdc12a, type: 3}
+  partTracker: {fileID: 0}
 --- !u!222 &6156832822794098344
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9481,6 +9526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridManager: {fileID: 609400269216206848}
   partToGenerate: {fileID: 8893972817644265450, guid: 4f937ede851d1f845aa2c98dddbdc12a, type: 3}
+  partTracker: {fileID: 1208421906}
 --- !u!114 &6156832824624115110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9527,6 +9573,7 @@ MonoBehaviour:
       m_Calls: []
   gridManager: {fileID: 0}
   partToGenerate: {fileID: 8893972817644265450, guid: 4f937ede851d1f845aa2c98dddbdc12a, type: 3}
+  partTracker: {fileID: 0}
 --- !u!114 &6156832824624115112
 MonoBehaviour:
   m_ObjectHideFlags: 0
