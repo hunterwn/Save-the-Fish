@@ -54,7 +54,7 @@ public class behavior_Draggable : MonoBehaviour
         for (int i = 0; i < gridPoints.Count; i++)
         {
             gridPoints[i] += offset;
-            DrawBox(gridPoints[i], 0.2f, Color.green);
+            //DrawBox(gridPoints[i], 0.2f, Color.green);
         }
     }
     public void OnMouseDown()
@@ -88,10 +88,10 @@ public class behavior_Draggable : MonoBehaviour
             if(transform.localPosition != roundedPosition) {
                 Vector3 offset = roundedPosition - transform.localPosition;
 
-                if(CheckGridPointsAvailable(offset)) {
+                //if(CheckGridPointsAvailable(offset)) {
                     transform.localPosition = roundedPosition;
-                    AddOffsetToGridPoints(offset);
-                }
+                    //AddOffsetToGridPoints(offset);
+                //}
             }
         }
     }

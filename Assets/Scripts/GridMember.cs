@@ -18,7 +18,7 @@ public class GridMember : MonoBehaviour
                 Vector2 newPoint = new Vector2(x_val, y_val);
                 Collider2D hitColl = Physics2D.OverlapBox(newPoint, new Vector2(gridWidth / 2, gridWidth / 2), 0);
                 if(hitColl != null) {
-                    DrawBox(newPoint, 0.2f, Color.blue);
+                    //DrawBox(newPoint, 0.2f, Color.blue);
                     gridManager.addPoint(newPoint);
                 }
                 x_val += gridWidth;
