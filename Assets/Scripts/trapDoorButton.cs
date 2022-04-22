@@ -12,13 +12,15 @@ public class trapDoorButton : MonoBehaviour
     void Start()
     {
         trapDoorRB = trapDoor.GetComponent<Rigidbody2D>();
-        trapDoorRB.simulated = false;
+        trapDoorRB.freezeRotation = true;
+        trapDoorRB.constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(!other.gameObject.CompareTag("Particle")) {
             spriteRenderer.sprite = pressedSprite; 
-            trapDoorRB.simulated = true;
+            trapDoorRB.freezeRotation = false;
+            trapDoorRB.constraints = 0;
         }
     }
 }
