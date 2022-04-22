@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class FishBowl : MonoBehaviour
 {
     public int waterLayer = 6;
-    public GameObject meter;
     private int waterCount = 0;
     public AudioSource waterSound;
 
@@ -20,8 +19,6 @@ public class FishBowl : MonoBehaviour
         {
             collider.gameObject.transform.localScale *= 2;
             waterCount += 1;
-            meter.transform.localScale += change;
-            meter.transform.position += change;
 
             //Check if sound needs to be done
             if(waterCount % 10 == 0) waterSound.Play();
@@ -39,8 +36,6 @@ public class FishBowl : MonoBehaviour
         if(collider.gameObject.layer == waterLayer)
         {
             waterCount -= 1;
-            meter.transform.localScale -= change;
-            meter.transform.position -= change;
         }
     }
 }
