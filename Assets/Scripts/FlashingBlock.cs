@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlashingBlock : MonoBehaviour
+public class FlashingBlock : ActiveObject
 {
     public SpriteRenderer spriteRenderer;
     public Collider2D coll;

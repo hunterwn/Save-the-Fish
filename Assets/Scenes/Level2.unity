@@ -337,7 +337,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: RotatingGearLeft (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 529894968916232101, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
+    - {fileID: 5545936951360500079, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
 --- !u!1 &277564277
 GameObject:
@@ -1630,7 +1632,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: RotatingGearRight (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 529894968916232101, guid: cd3502668e26f0d4bad78793beecaa57, type: 3}
+    - {fileID: 5545936951360500079, guid: cd3502668e26f0d4bad78793beecaa57, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd3502668e26f0d4bad78793beecaa57, type: 3}
 --- !u!1 &614311203
 GameObject:
@@ -2297,7 +2301,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &776324049
+--- !u!1 &778249468
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2305,60 +2309,60 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 776324050}
-  - component: {fileID: 776324055}
-  - component: {fileID: 776324054}
-  - component: {fileID: 776324053}
-  - component: {fileID: 776324052}
-  - component: {fileID: 776324051}
+  - component: {fileID: 778249469}
+  - component: {fileID: 778249474}
+  - component: {fileID: 778249473}
+  - component: {fileID: 778249472}
+  - component: {fileID: 778249471}
+  - component: {fileID: 778249470}
   m_Layer: 5
-  m_Name: PartGeneratorButton (3)
+  m_Name: PartGeneratorButton (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &776324050
+--- !u!224 &778249469
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776324049}
+  m_GameObject: {fileID: 778249468}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.7856345, y: 6.361144, z: 4.379817}
+  m_LocalScale: {x: 3.6815407, y: 4.893564, z: 3.3693492}
   m_Children: []
   m_Father: {fileID: 1208421903}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: 92}
+  m_AnchoredPosition: {x: 8, y: 88}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &776324051
+--- !u!114 &778249470
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776324049}
+  m_GameObject: {fileID: 778249468}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b0b71a6d426fca45b4e9b36668ccc3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gridManager: {fileID: 609400269216206848}
-  partToGenerate: {fileID: 4682768947173028, guid: 660f39793a3017c48a282fa64f7f2627, type: 3}
+  partToGenerate: {fileID: 2163689274581021927, guid: 050290ff972645146bb6f79be5caf0b3, type: 3}
   partTracker: {fileID: 1208421906}
---- !u!114 &776324052
+--- !u!114 &778249471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776324049}
+  m_GameObject: {fileID: 778249468}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4263c5f082cd80428768241aeb0fce9, type: 3}
@@ -2392,20 +2396,20 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 776324054}
+  m_TargetGraphic: {fileID: 778249473}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
   gridManager: {fileID: 0}
   partToGenerate: {fileID: 8893972817644265450, guid: 4f937ede851d1f845aa2c98dddbdc12a, type: 3}
   partTracker: {fileID: 0}
---- !u!114 &776324053
+--- !u!114 &778249472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776324049}
+  m_GameObject: {fileID: 778249468}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -2443,27 +2447,27 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &776324054
+--- !u!114 &778249473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776324049}
+  m_GameObject: {fileID: 778249468}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.2509804, b: 0.2509804, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2ea7df1f6dd93f74683fcf87620fe845, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7f537eb0eeeb3f04d9ebd9d9f9d820f7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2473,13 +2477,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &776324055
+--- !u!222 &778249474
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776324049}
+  m_GameObject: {fileID: 778249468}
   m_CullTransparentMesh: 1
 --- !u!1 &789329335
 GameObject:
@@ -2862,7 +2866,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: RotatingGearLeft (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 529894968916232101, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
+    - {fileID: 5545936951360500079, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
 --- !u!1 &856762716
 GameObject:
@@ -3207,7 +3213,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: RotatingGearLeft
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 529894968916232101, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
+    - {fileID: 5545936951360500079, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
 --- !u!1 &1014796390
 GameObject:
@@ -3854,8 +3862,8 @@ RectTransform:
   - {fileID: 1322357476}
   - {fileID: 6156832822794098347}
   - {fileID: 6156832824624115114}
-  - {fileID: 776324050}
   - {fileID: 1445174144}
+  - {fileID: 778249469}
   m_Father: {fileID: 1302680491}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3971,7 +3979,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: RotatingGearLeft (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 529894968916232101, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
+    - {fileID: 5545936951360500079, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
 --- !u!1 &1259593517
 GameObject:
@@ -5203,7 +5213,7 @@ RectTransform:
   m_LocalScale: {x: 2.425, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1208421903}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5637,7 +5647,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: RotatingGearRight (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 529894968916232101, guid: cd3502668e26f0d4bad78793beecaa57, type: 3}
+    - {fileID: 5545936951360500079, guid: cd3502668e26f0d4bad78793beecaa57, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd3502668e26f0d4bad78793beecaa57, type: 3}
 --- !u!114 &1850659835
 MonoBehaviour:
@@ -5853,7 +5865,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: RotatingGearLeft (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 529894968916232101, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
+    - {fileID: 5545936951360500079, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5bcc268134894b34cb8384589dd9cb78, type: 3}
 --- !u!1 &2002287445
 GameObject:
@@ -6198,7 +6212,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: RotatingGearRight
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 529894968916232101, guid: cd3502668e26f0d4bad78793beecaa57, type: 3}
+    - {fileID: 5545936951360500079, guid: cd3502668e26f0d4bad78793beecaa57, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd3502668e26f0d4bad78793beecaa57, type: 3}
 --- !u!1001 &2121434184
 PrefabInstance:
