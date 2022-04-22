@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayButton : MonoBehaviour
 {
     public ParticleGenerator particleGenerator;
+    public GridManager gridManager;
     void OnMouseDown()
     {
         particleGenerator.BeginGenerating();
@@ -12,6 +13,7 @@ public class PlayButton : MonoBehaviour
         foreach(ActiveObject x in foundActiveObjects) {
             x.active = true;
         }
+        gridManager.locked = true;
         Destroy(gameObject);
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
+    public bool locked = false;
     public float gridWidth = 0.5f;
     [HideInInspector]
     private List<Vector2> gridPoints = new List<Vector2>();

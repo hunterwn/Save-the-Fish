@@ -59,6 +59,9 @@ public class behavior_Draggable : MonoBehaviour
     }
     public void OnMouseDown()
     {
+        if(gridManager.locked) {
+            return;
+        }
         ActiveObject activeObject = gameObject.GetComponent<ActiveObject>();
         activeObject.SetInactive();
         isDragged = true;
@@ -73,6 +76,9 @@ public class behavior_Draggable : MonoBehaviour
 
     public void OnMouseDrag()
     {
+        if(gridManager.locked) {
+            return;
+        }
         if (isDragged)
         {
             Vector3 mousePosFromCamera = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -92,6 +98,9 @@ public class behavior_Draggable : MonoBehaviour
 
     public void OnMouseUp()
     {
+        if(gridManager.locked) {
+            return;
+        }
         ActiveObject activeObject = gameObject.GetComponent<ActiveObject>();
         activeObject.SetActive();
         isDragged = false;
