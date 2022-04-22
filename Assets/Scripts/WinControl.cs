@@ -8,7 +8,8 @@ public class WinControl : MonoBehaviour
 {
     public string menu;
     public Text points;
-
+    public AudioSource menuButton;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -25,11 +26,13 @@ public class WinControl : MonoBehaviour
 
     public void MainMenu()
     {
+        menuButton.Play();
         SceneManager.LoadScene(menu);
     }
 
     public void NextLevel()
     {
+        menuButton.Play();
         SceneManager.LoadScene(GlobalVariables.previousSceneIndex + 1);
     }
 }

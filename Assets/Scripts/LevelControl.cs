@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class LevelControl : MonoBehaviour
 {
     public string menu;
-    
+    public AudioSource menuButton;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class LevelControl : MonoBehaviour
 
     public void MainMenu()
     {
+        menuButton.Play();
         SceneManager.LoadScene(menu);
     }
 
