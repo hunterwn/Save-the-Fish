@@ -152,7 +152,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 1, y: 0}
-  m_ConnectedAnchor: {x: 1.6034299, y: -3.4500003}
+  m_ConnectedAnchor: {x: 2.5214772, y: -0.78658676}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -296,7 +296,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1, y: 0.5}
+  m_Size: {x: 1.4, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &8468989608283719567
 MonoBehaviour:

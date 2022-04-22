@@ -17,12 +17,13 @@ public class FishBowl : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider) {
         if(collider.gameObject.layer == waterLayer)
         {
+            collider.gameObject.transform.localScale *= 2;
             waterCount += 1;
             meter.transform.localScale += change;
             meter.transform.position += change;
 
             //Check if filled bowl
-            if(waterCount >= 240) SceneManager.LoadScene("Winscreen");
+            if(waterCount >= 75) SceneManager.LoadScene("Winscreen");
         }
     }
 
