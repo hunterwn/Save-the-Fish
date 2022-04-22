@@ -18,6 +18,7 @@ public class PartGeneratorButton : Button
     public override void OnPointerDown(PointerEventData eventData)
     {
         if(partTracker.partsLeft > 0) {
+            GlobalVariables.amountOfParts++;
             partTracker.partsLeft--;
             base.OnPointerDown(eventData);
             mouseHeld = true;
